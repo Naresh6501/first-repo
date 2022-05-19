@@ -1,0 +1,26 @@
+
+<table border="1">
+    <tr>
+        <th>S.No</th>
+        <th>loanId</th>
+        <th>loanCustomerName</th>
+        <th>loanAmount</th>
+        <th>dateOfLoan</th>
+        <th>tenure</th>
+        <th>rateOfInterest</th>
+        <th>InterestAmount</th>
+        <th>EMI</th>
+    </tr>
+    <tr *ngFor="let e of loans;index as i">
+        <td>{{i}}</td>
+        <td>{{e.loanId}}</td>
+        <td>{{e.loanCustomerName}}</td>
+        <td>{{e.loanAmount}}</td>
+        <td>{{e.dateOfLoan}}</td>
+        <td>{{e.tenure}}</td>
+        <td>{{e.rateOfInterest}}</td>
+        <td>{{e.InterestAmount}}</td>
+        <td>{{e.EMI}}</td>
+
+    </tr>
+</table>

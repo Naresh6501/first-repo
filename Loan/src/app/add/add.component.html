@@ -1,0 +1,49 @@
+
+{{loanForm.value | json}}
+<form [formGroup]="loanForm" >
+   
+<table>
+    <tr>
+        <td><label>loan Id</label></td>
+        <td><input formControlName="loanId"></td>
+    </tr>
+    <tr>
+        <td><label>loan Customer Name</label></td>
+        <td><input formControlName="loanCustomerName"></td>
+    </tr>
+    <tr>
+        <td><label>loanAmount</label></td>
+        <td><input formControlName="loanAmount"></td>
+       
+    </tr>
+    <tr>
+        <td><label>dateOfLoan</label></td>
+        <td><input formControlName="dateOfLoan"></td>
+       
+    </tr>
+    <tr>
+        <td><label>tenure</label></td>
+        <td><input formControlName="tenure"></td>
+       
+    </tr>
+    <tr>
+        <td><label>rateOfInterest</label></td>
+        <td><input formControlName="rateOfInterest"></td>
+       
+    </tr>
+    <tr>
+        <td><label>InterestAmount</label></td>
+        <button (click)="comuteInterestAmount()">InterestAmount</button>
+    </tr>
+    <tr>
+        <td><label>EMI</label></td>
+        <button (click)="computeEMI()">EMI</button>
+    </tr>
+    <tr >
+        <td colspan="2">
+            <button (click)="add()">Add</button>
+          
+        </td>
+    </tr>
+</table>
+</form>

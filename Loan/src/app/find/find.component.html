@@ -1,0 +1,23 @@
+
+<label>loanId</label><input #inp1>
+<button (click)="find(inp1.value)">find</button><br>
+<table>
+    <tr>
+         <th>S.No</th>
+        <th>loanId</th>
+        <th>loanCustomerName</th>
+        <th>loanAmount</th>
+        <th>dateOfLoan</th>
+        <th>tenure</th>
+        <th>rateOfInterest</th>
+    </tr>
+    <tr>
+        <td>{{i}}</td>
+        <td>{{loan.loanId}}</td>
+        <td>{{loan.loanCustomerName}}</td>
+        <td>{{loan.loanAmount}}</td>
+        <td>{{loan.dateOfLoan}}</td>
+        <td>{{loan.tenure}}</td>
+        <td>{{loan.rateOfInterest}}</td>
+    </tr>
+</table>
